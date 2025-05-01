@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:description" content="Rezaremos por cada um: que o Espírito Santo ilumine, que a pureza de coração e a Sabedoria lhes assistam na hora de votar quem será o novo pastor da Igreja.">
+  <title>Reze por um Cardeal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Enlace al archivo CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="decoration decoration-1"></div>
+    <div class="decoration decoration-2"></div>
+    <div class="decoration decoration-3"></div>
+    <div class="decoration decoration-4"></div>
+    
+    <div class="header">
+      <img src="https://comshalom.org/wp-content/themes/comshalom/image/comshalom-logo.png" alt="Logo " class="logo" style="width: 300px; height: auto;">
+    </div>
+   
+    <p class="description">Queremos propor uma forma simples de nos unir neste momento tão importante para a Igreja. Que cada um possa <b>acompanhar com sua oração</b> um cardeal eleitor.</p>
+    <p class="description">Um por Um</p>
+    <p class="description">Rezaremos por cada um: para que o <b>Espírito Santo os ilumine</b>, que a pureza de coração e a Sabedoria lhes assistam <b>na hora de votar quem será o novo pastor da Igreja</b>.</p>
+    <p class="description">Por quem rezar?</p>
+    <p class="description"><b>Busque seu aniversário e será designado um cardeal</b>. Assim todos estarão <b>acompanhados pela oração de alguém</b>.</p>
+    
+    <div class="input-group">
+      <div class="custom-date-container">
+        <select id="month-select" class="date-input month-select">
+          <option value="" disabled selected>Mês</option>
+          <option value="01">Janeiro</option>
+          <option value="02">Fevereiro</option>
+          <option value="03">Março</option>
+          <option value="04">Abril</option>
+          <option value="05">Maio</option>
+          <option value="06">Junho</option>
+          <option value="07">Julho</option>
+          <option value="08">Agosto</option>
+          <option value="09">Setembro</option>
+          <option value="10">Outubro</option>
+          <option value="11">Novembro</option>
+          <option value="12">Dezembro</option>
+        </select>
+        <select id="day-select" class="date-input day-select">
+          <option value="" disabled selected>Dia</option>
+        </select>
+      </div>
+      <button id="find-button" class="btn btn-primary">
+        <i class="fas fa-search"></i> Descobrir
+      </button>
+    </div>
+    
+    <div id="result" class="result-container">
+      <p class="result-title">O cardeal designado para sua oração é:</p>
+      <img id="cardinal-image" src="" alt="Imagem do Cardenal" class="cardinal-image">
+      <p id="cardinal-name" class="cardinal-name"></p>
+      
+      <div class="prayer">
+        <p>Pai bondoso, obrigado.</p>
+        <p>Obrigado pelo Papa Francisco,<br>
+        por sua vida alegre e sem reservas,<br>
+        por seu coração que zela pelos marginalizados<br>
+        e por seu exemplo de misericórdia.</p>
+        <p>Agora acolha-o em seus braços.</p>
+        <p>Deus Filho, que pensaste em Pedro<br>
+        ao imaginar tua Igreja,<br>
+        nos dê um <strong>novo Papa que nos fale de Ti sem medo</strong>,<br>
+        que mostre as facetas do Teu rosto<br>
+        de que o mundo tem sede e ainda não conhece.</p>
+        <p>Espírito Santo,<br>
+        <strong>desperta-nos nesta espera</strong>.</p>
+        <p>Prepara agora nossa Igreja<br>
+        para o Papa que há de vir,<br>
+        faz de nós <strong>terra fértil para o novo</strong>,<br>
+        que o acolhamos com alegria,<br>
+        com humildade e confiança sem cálculos.</p>
+        <p>Tu sabes guiar-nos.</p>
+        <p>Peço luz para o <strong><span id="prayer-cardinal-name"></span></strong>, que lhe concedas<br>
+        tua clareza e liberdade interior<br>
+        para escolher conforme Tua vontade.</p>
+        <p>A Ti, Deus vivo,<br>
+        dizemos sim.</p>
+      </div>
+      
+      <div class="share-container">
+        <div class="download-container">
+          <h3 style="font-size: 1.1rem; color: var(--cardinal-red); margin-bottom: 0.5rem;">Sua oração</h3>
+          <button id="download-btn" class="download-btn">
+            <i class="fas fa-download"></i> Baixar oração
+          </button>
+          <div id="download-message" class="download-message">Oração baixada!</div>
+        </div>
+        
+        <div class="share-buttons">
+          <div class="share-btn facebook" onclick="window.share('facebook')">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="share-btn twitter" onclick="window.share('twitter')">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="share-btn whatsapp" onclick="window.share('whatsapp')">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <img src="./logosh.png" alt="Logo" class="logo">
+      <p class="footer-tagline">Comshalom - Comunidade Católica Shalom</p>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</body>
+</html>
