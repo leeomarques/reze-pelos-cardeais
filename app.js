@@ -216,35 +216,30 @@ function generateCardinalCard() {
   });
   
   // Texto da oração
-  const prayerText = `Pai bondoso, obrigado.
-    Obrigado pelo Papa Francisco,
-    por sua vida alegre e entregue sem reservas,
-    por seu coração inquieto pelos descartados
-    e seu exemplo de misericórdia.
-    Agora acolha-o em seus braços.
+  const prayerText = `
+  
+  
+Veni Creator Spiritus (Vem, Espírito Criador!)
 
-    Deus Filho, que pensou em Pedro
-    ao imaginar sua Igreja,
-    nos dê um novo Papa que fale de você sem medo,
-    que mostre aquelas facetas do seu rosto
-    das quais o mundo tem sede e ainda não conhece.
+Vinde, Espírito Criador, a nossa alma visitai,
+e enchei os corações com vossos dons celestiais.
 
-    Espírito Santo,
-    desperte-nos nesta espera.
+Vós sois chamado o Intercessor, dom de Deus sem igual,
+a fonte viva, o fogo, o amor, a unção divina e salutar.
 
-    Prepare agora nossa Igreja
-    para o Papa que está por vir,
-    faça de nós terra fértil para o novo,
-    que o recebamos com alegria,
-    com humildade e confiança sem cálculos.
-    Você saberá nos guiar.
+Sois o doador dos sete dons, e poder na mão do Pai,
+por Ele prometido a nós, por nós Seus feitos proclamai.
 
-    Peço luz para o ${cardinalName}, que lhe conceda
-    sua clareza e liberdade interior
-    para escolher conforme sua vontade.
+A nossa mente iluminai, os corações enchei de amor,
+nossa fraqueza encorajai, com força eterna e protetor.
 
-    A você, Deus vivo,
-    dizemos sim.`;
+Nosso inimigo repeli, e concedei-nos vossa paz;
+se pela graça nos guiais, o mal deixamos para trás.
+
+Ao Pai e ao Filho Salvador, por vós possamos conhecer
+que procedeis do Seu amor — fazei-nos sempre firmes crer.
+
+Amém.`;
   
   // Criar e baixar a oração
   Promise.all([loadCardinalImage(), loadLogo()])
